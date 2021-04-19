@@ -22,7 +22,7 @@ let source = axios.CancelToken.source();
         return () => {
             if (source) source.cancel("Landing Component got unmounted")
           }
-     },[])
+     })
      let showPosts=null;
     showPosts=post.map(data=>data.map(sdata=><AllPost key={sdata.id} id={sdata.id} title={sdata.name} />))
      return (
