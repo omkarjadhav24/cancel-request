@@ -5,7 +5,7 @@ import Post from '../src/Components/post/post'
 function App() {
   return (
     <>
-      <Post/>
+      <Nav/>
     </>
   );
 }
