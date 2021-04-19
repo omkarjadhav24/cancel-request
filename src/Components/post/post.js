@@ -18,11 +18,14 @@ const source = CancelToken.source();
             const updatedPosts = posts.map( post => {return {...post}});
             setPost([updatedPosts])
         })
-        .catch(err=>{
-            console.log(err)
-        })
+        .catch(err=>console.log(err));
+        // .catch( (thrown)=> {
+        //     // showed unmounted message
+        //     // if (axios.isCancel(thrown)) console.log('Request canceled', thrown.message) 
+        //     // else {}
+        //           });
         return () => {
-           source && source.cancel("Landing Component got unmounted")
+           source.cancel("Landing Component got unmounted")
             console.log("Cancel")
           }
      },[])
