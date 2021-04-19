@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import './post.css'
 import AllPost from '../AllPost/allpost'
 import axios from 'axios'
-// fake api
+// fake api link
 let usersEndpoint = "https://jsonplaceholder.typicode.com/users";
 // cancel token
 const CancelToken = axios.CancelToken;
