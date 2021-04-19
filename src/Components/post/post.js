@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import './post.css'
 import AllPost from '../AllPost/allpost'
 import axios from 'axios'
 // fake api
